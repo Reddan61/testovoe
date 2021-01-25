@@ -1,0 +1,158 @@
+.textMixin(@size,@height) {
+  font-style: normal;
+  font-weight: normal;
+  font-size: @size;
+  line-height: @height;
+  color: #503131;
+}
+
+
+.movieDetails {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__body {
+    padding: 30px 0 0;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main {
+    padding: 30px 0 0;
+    display: flex;
+  }
+
+  &__back {
+    max-width: 60px;
+    > a {
+      span {
+        display: flex;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #503131;
+      }
+      display: flex;
+      text-decoration: none;
+    }
+  }
+
+  &__arrow {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:after,
+    &:before {
+      position: absolute;
+      content: '';
+      width: 8px;
+      height: 1px;
+      background-color: #503131;
+    }
+
+    &:after {
+      top:8px;
+      transform: rotate(-45deg);
+    }
+
+    &:before {
+      top: 13px;
+      transform: rotate(45deg);
+    }
+  }
+
+
+  &__right {
+    padding: 0 0 0 20px;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    span {
+      display: block;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 34px;
+      letter-spacing: 0.5px;
+      color: #503131;
+      max-width: 350px;
+    }
+
+
+  }
+
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    .star-ratings {
+      margin: 0 0 0 10px;
+    }
+
+    span {
+      position: relative;
+      top: -1px;
+      font-family: "Open Sans";
+      .textMixin(17px,21px);
+    }
+    padding: 30px 0 0;
+  }
+
+
+  &__about {
+    padding: 30px 0 0 0;
+
+  }
+  &__nameCategories {
+    display: block;
+    min-width: 200px;
+    max-width: 200px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 21px;
+    color: #503131;
+  }
+
+  &__genre {
+    .textMixin(15px,21px);
+    display: flex;
+    padding: 15px 0 0;
+  }
+  &__year {
+    .textMixin(15px,21px);
+    display: flex;
+    padding: 15px 0 0;
+  }
+  &__runningTime {
+    .textMixin(15px,21px);
+    padding: 15px 0 0;
+    display: flex;
+  }
+  &__starring {
+    .textMixin(15px,21px);
+    padding: 15px 0 0;
+    display: flex;
+  }
+
+  &__description {
+    .textMixin(17px,31px);
+    overflow: hidden;
+    max-height:292px;
+    padding: 40px 0 0;
+  }
+}
+
+

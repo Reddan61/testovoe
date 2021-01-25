@@ -1,0 +1,66 @@
+.cover {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 285px;
+  height: 428px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.cover * {
+  font-size: 15px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.cover_active {
+  visibility: visible;
+}
+.cover__body {
+  width: 100%;
+  height: 428px;
+}
+.cover__description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.cover__heart {
+  right: 0;
+}
+.cover__heart .fa-heart {
+  font-size: 30px;
+  top: 19px;
+}
+.cover__heart .fa-heart_active {
+  color: red;
+}
+.cover__genre {
+  font-size: 19px;
+  line-height: 21px;
+}
+.cover__description {
+  padding: 0 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+}
+.cover__time {
+  margin: 10px 0 0;
+}
+.cover__yearStar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin: 10px 0 0;
+}
+.cover__star {
+  position: absolute;
+  right: 0;
+}
+.cover .fa-star {
+  margin: 0 15px 0 0;
+  color: #FFB800;
+  font-size: 15px;
+}
+/*# sourceMappingURL=cover.css.map */

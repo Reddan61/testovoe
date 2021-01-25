@@ -1,0 +1,152 @@
+.movieDetails {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.movieDetails__body {
+  padding: 30px 0 0;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.movieDetails__main {
+  padding: 30px 0 0;
+  display: flex;
+}
+.movieDetails__back {
+  max-width: 60px;
+}
+.movieDetails__back > a {
+  display: flex;
+  text-decoration: none;
+}
+.movieDetails__back > a span {
+  display: flex;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #503131;
+}
+.movieDetails__arrow {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movieDetails__arrow:after,
+.movieDetails__arrow:before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 1px;
+  background-color: #503131;
+}
+.movieDetails__arrow:after {
+  top: 8px;
+  transform: rotate(-45deg);
+}
+.movieDetails__arrow:before {
+  top: 13px;
+  transform: rotate(45deg);
+}
+.movieDetails__right {
+  padding: 0 0 0 20px;
+}
+.movieDetails__title {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.movieDetails__title span {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: 0.5px;
+  color: #503131;
+  max-width: 350px;
+}
+.movieDetails__stars {
+  display: flex;
+  align-items: center;
+  padding: 30px 0 0;
+}
+.movieDetails__stars .star-ratings {
+  margin: 0 0 0 10px;
+}
+.movieDetails__stars span {
+  position: relative;
+  top: -1px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  color: #503131;
+}
+.movieDetails__about {
+  padding: 30px 0 0 0;
+}
+.movieDetails__nameCategories {
+  display: block;
+  min-width: 200px;
+  max-width: 200px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 21px;
+  color: #503131;
+}
+.movieDetails__genre {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #503131;
+  display: flex;
+  padding: 15px 0 0;
+}
+.movieDetails__year {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #503131;
+  display: flex;
+  padding: 15px 0 0;
+}
+.movieDetails__runningTime {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #503131;
+  padding: 15px 0 0;
+  display: flex;
+}
+.movieDetails__starring {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #503131;
+  padding: 15px 0 0;
+  display: flex;
+}
+.movieDetails__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 31px;
+  color: #503131;
+  overflow: hidden;
+  max-height: 292px;
+  padding: 40px 0 0;
+}
+/*# sourceMappingURL=movieDetails.css.map */

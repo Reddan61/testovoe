@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  font-family: Play, sans-serif;
+  color: black;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.App__body {
+  width: 100%;
+  min-width: 1200px;
+  min-height: 100vh;
+}
+.App_active * {
+  background-color: black;
+  color: #E0DBDB;
+}
+.App_active .header__input > input {
+  border: 0.5px solid #E0DBDB;
+  color: #E0DBDB;
+}
+.App_active .header__input > input::-webkit-input-placeholder {
+  color: #E0DBDB;
+}
+.App_active .header__input > input::-moz-placeholder {
+  color: #E0DBDB;
+}
+.App_active .header__input > input:-moz-placeholder {
+  color: #E0DBDB;
+}
+.App_active .header__input > input:-ms-input-placeholder {
+  color: #E0DBDB;
+}
+.App_active .header {
+  border-bottom: 1px solid rgba(224, 219, 219, 0.4);
+}
+.App_active .movies__span {
+  color: #B4A3A3;
+}
+.App_active .movies__span_active {
+  color: #E0DBDB;
+}
+.App_active .movies__filter span {
+  color: #E0DBDB;
+}
+.App_active .movie__title span {
+  color: #E0DBDB;
+}
+.App_active .pagination * {
+  color: #E0DBDB;
+}
+.App_active .pagination__arrow:after,
+.App_active .pagination__arrow:before {
+  background: #E0DBDB;
+}
+.App_active .points:after,
+.App_active .points:before,
+.App_active .points span {
+  background: #E0DBDB;
+}
+.App_active .movieDetails * {
+  color: #E0DBDB;
+}
+.App_active .movieDetails__arrow:after,
+.App_active .movieDetails__arrow:before {
+  background: #E0DBDB;
+}
+.App_active .fas_active {
+  color: red;
+}
+.fa-heart {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 30px;
+  color: #E0DBDB;
+}
+.fa-heart_active {
+  color: red;
+}
+.fa-heart:hover {
+  cursor: pointer;
+  color: red;
+}
+.fa-heart_active:hover {
+  color: #cc0000;
+}
+/*# sourceMappingURL=app.css.map */

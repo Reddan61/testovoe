@@ -1,0 +1,17 @@
+.movie {
+  margin: 0 10px 0;
+  max-width: 285px;
+}
+.movie__body {
+  position: relative;
+  max-width: 285px;
+}
+.movie__title {
+  padding: 0 0 0 5px;
+}
+.movie__title span {
+  font-size: 18px;
+  line-height: 21px;
+  color: #503131;
+}
+/*# sourceMappingURL=movie.css.map */

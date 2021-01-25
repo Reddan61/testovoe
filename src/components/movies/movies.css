@@ -1,0 +1,67 @@
+.movies {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.movies__body {
+  padding: 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+}
+.movies__title {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.movies__sample span {
+  user-select: none;
+}
+.movies__sample :first-child {
+  margin: 0;
+}
+.movies__span {
+  margin: 0 0 0 70px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 21px;
+  color: #E0DBDB;
+  cursor: default;
+}
+.movies__span_active {
+  color: #503131;
+}
+.movies__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.movies__row {
+  display: flex;
+  margin: 40px 0 0;
+  width: 100%;
+  justify-content: flex-start;
+}
+.movies__row :first-child {
+  margin: 0 10px 0 0;
+}
+.movies__filter {
+  position: absolute;
+  right: 0;
+}
+.movies__filter span {
+  user-select: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: #503131;
+  cursor: pointer;
+  margin: 0 10px 0;
+}
+.movies__filter :last-child {
+  margin: 0 0 0 10px;
+}
+/*# sourceMappingURL=movies.css.map */

@@ -1,0 +1,68 @@
+
+.cover {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 285px;
+  height: 428px;
+  background-color: rgba(0,0,0,0.6);
+  *{
+    font-size: 15px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+  &_active {
+    visibility: visible;
+  }
+
+  &__body {
+    width: 100%;
+    height: 428px;
+  }
+  &__description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &__heart {
+    .fa-heart {
+      font-size: 30px;
+      top:19px;
+      &_active {
+        color: red;
+      }
+    }
+    right:0;
+  }
+
+  &__genre {
+    font-size: 19px;
+    line-height: 21px;
+  }
+  &__description {
+    padding: 0 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+  }
+  &__time {
+    margin: 10px 0 0;
+  }
+  &__yearStar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 10px 0 0;
+  }
+  &__star {
+    position: absolute;
+    right: 0;
+  }
+  .fa-star {
+    margin: 0 15px 0 0;
+    color:#FFB800;
+    font-size: 15px;
+  }
+}

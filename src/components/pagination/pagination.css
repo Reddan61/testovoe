@@ -1,0 +1,123 @@
+.pagination {
+  padding: 66px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination__body {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 24px;
+}
+.pagination__left {
+  display: flex;
+  margin: 0 13px 0 0;
+}
+.pagination__right {
+  display: flex;
+  margin: 0 0 0 13px;
+}
+.pagination__numbers {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 25px;
+}
+.pagination__numbers span {
+  user-select: none;
+}
+.pagination__arrow {
+  position: relative;
+  width: 8px;
+  min-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.pagination__arrow:after,
+.pagination__arrow:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #503131;
+}
+.pagination__arrow:after {
+  top: 7px;
+  transform: rotate(-45deg);
+}
+.pagination__arrow:before {
+  top: 2px;
+  transform: rotate(45deg);
+}
+.pagination__leftArrow {
+  transform: rotate(180deg);
+}
+.pagination__rightArrow:after {
+  top: 10px;
+  transform: rotate(45deg);
+}
+.pagination__rightArrow:before {
+  top: 15px;
+  transform: rotate(-45deg);
+}
+.pagination__number {
+  margin: 0 13px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #503131;
+  cursor: pointer;
+  min-height: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+.pagination__number_active {
+  position: relative;
+  top: 2px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 24px;
+}
+.pagination__leftPoints {
+  margin: 0 0 0 17px;
+}
+.pagination__rightPoints {
+  margin: 0 17px 0 0;
+}
+.points {
+  position: relative;
+  width: 10px;
+  /*height: 16px;*/
+  display: flex;
+  align-items: flex-end;
+}
+.points span {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  left: 10px;
+  background-color: #503131;
+}
+.points:after,
+.points:before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #503131;
+}
+.points:after {
+  left: 5px;
+}
+/*# sourceMappingURL=pagination.css.map */

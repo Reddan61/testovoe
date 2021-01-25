@@ -1,0 +1,19 @@
+.error {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error * {
+  font-family: Play;
+}
+.error__status {
+  color: red;
+  font-size: 60px;
+  border-bottom: 1px solid rgba(224, 219, 219, 0.7);
+}
+.error__message {
+  margin: 20px 0 0;
+}
+/*# sourceMappingURL=error.css.map */

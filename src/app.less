@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: Play, sans-serif;
+  color: black;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+}
+.App {
+  &__body {
+    width: 100%;
+    min-width: 1200px;
+    min-height: 100vh;
+  }
+
+  &_active {
+    * {
+      background-color: black;
+      color: #E0DBDB;
+    }
+
+
+
+
+
+    & .header__input > input {
+      border: 0.5px solid #E0DBDB;
+      color: #E0DBDB;
+
+      &::-webkit-input-placeholder {
+        color: #E0DBDB
+      }
+
+      &::-moz-placeholder {
+        color: #E0DBDB
+      }
+
+      &:-moz-placeholder {
+        color: #E0DBDB
+      }
+
+      &:-ms-input-placeholder {
+        color: #E0DBDB
+      }
+    }
+
+    .header {
+      border-bottom: 1px solid rgba(224, 219, 219, 0.4);
+    }
+
+    .movies__span {
+      color: #B4A3A3;
+      &_active {
+        color: #E0DBDB;
+      }
+    }
+    .movies__filter {
+      span {
+        color: #E0DBDB;
+      }
+    }
+
+    & .movie__title span {
+      color: #E0DBDB;
+    }
+
+    & .pagination {
+      * {
+        color: #E0DBDB;
+      }
+      &__arrow:after ,
+      &__arrow:before {
+        background: #E0DBDB;
+      }
+    }
+    & .points:after,
+    & .points:before,
+    & .points span {
+      background: #E0DBDB;
+    }
+    
+    & .movieDetails {
+      * {
+        color: #E0DBDB;
+      }
+
+      &__arrow {
+        &:after,
+        &:before {
+          background: #E0DBDB;
+        }
+      }
+    }
+
+    & .fas {
+      &_active {
+        color:red;
+      }
+    }
+
+  }
+}
+
+
+
+.fa-heart {
+  position: absolute;
+  right: 0;
+  top:10px;
+  font-size: 30px;
+  color: #E0DBDB;
+  &_active {
+    color:red;
+  }
+  &:hover {
+    cursor: pointer;
+    color:red;
+  }
+  &_active:hover {
+    color: darken(red,10%);
+  }
+}
