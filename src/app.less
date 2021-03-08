@@ -9,10 +9,24 @@ body {
 
 }
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &__body {
     width: 100%;
-    min-width: 1200px;
+    min-width: 600px;
     min-height: 100vh;
+  }
+  @media(max-width: 1200px) {
+    &__body {
+      max-width: 900px;
+    }
+  }
+  @media(max-width: 900px) {
+    &__body {
+      max-width: 600px;
+      min-width: 600px;
+    }
   }
 
   &_active {

@@ -30,6 +30,7 @@
 .cover__heart .fa-heart {
   font-size: 30px;
   top: 19px;
+  margin: 0 10px 0 0;
 }
 .cover__heart .fa-heart_active {
   color: red;

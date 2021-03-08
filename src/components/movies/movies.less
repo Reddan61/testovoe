@@ -24,7 +24,6 @@
     }
   }
   &__span {
-
     margin: 0 0 0 70px;
     font-style: normal;
     font-weight: normal;
@@ -38,20 +37,22 @@
   }
 
   &__items {
+    gap:20px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
-  &__row {
+ /* &__row {
     display: flex;
     margin:40px 0 0;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     :first-child {
       margin: 0 10px 0 0;
     }
-  }
+  }*/
   &__filter {
     position: absolute;
     right:0;

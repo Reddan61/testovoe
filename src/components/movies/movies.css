@@ -3,6 +3,15 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  /* &__row {
+    display: flex;
+    margin:40px 0 0;
+    width: 100%;
+    justify-content: center;
+    :first-child {
+      margin: 0 10px 0 0;
+    }
+  }*/
 }
 .movies__body {
   padding: 40px 0 0;
@@ -35,19 +44,12 @@
   color: #503131;
 }
 .movies__items {
+  gap: 20px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-.movies__row {
-  display: flex;
-  margin: 40px 0 0;
-  width: 100%;
-  justify-content: flex-start;
-}
-.movies__row :first-child {
-  margin: 0 10px 0 0;
+  flex-wrap: wrap;
 }
 .movies__filter {
   position: absolute;

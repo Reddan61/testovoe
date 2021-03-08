@@ -13,8 +13,7 @@ let initialState = {
     searchingText: '',
     pageNumber: 1,
     totalCountPages: null,
-    movies: [],
-    moviesGrid: []
+    movies: []
 };
 
 
@@ -58,26 +57,25 @@ export default MovieReducer;
 
 
 export const actionsMovie = {
-    addMovieAC: (movies, totalCountPages, moviesGrid, pageNumber) => ({
+    addMovieAC: (movies, totalCountPages, pageNumber) => ({
         type: ADDMOVIES,
         movies,
         totalCountPages,
-        moviesGrid,
         pageNumber
     }),
     changePageNumberAC: (pageNumber) => ({type: CHANGEPAGENUMBER, pageNumber}),
     changeSearchingTextMovieAC: (text) => ({type: CHANGESEARCHINGTEXTMOVIE, text}),
     changeIsSearchingMovieAC: (bool) => ({type: CHANGEISSEARCHINGMOVIE, bool}),
-    sortMovieAC: (movies,movieGrid) => ({type: SORTMOVIE, movies,movieGrid})
+    sortMovieAC: (movies,movieGrid) => ({type: SORTMOVIE, movies})
 };
 
-function arrGrid(movies) {
+/*function arrGrid(movies) {
     let arr = [];
     for (let i = 0; i < Math.ceil(movies.length / 4); i++) {
         arr[i] = movies.slice((i * 4), (i * 4) + 4);
     }
     return arr;
-}
+}*/
 
 
 export const addMoviesThunk = (pageNumber) => {
@@ -89,8 +87,8 @@ export const addMoviesThunk = (pageNumber) => {
                 return
             }
             let movies = res.data.results;
-            let arr = arrGrid(movies);
-            dispatch(actionsMovie.addMovieAC(movies, res.data.total_pages, arr, pageNumber));
+           /* let arr = arrGrid(movies);*/
+            dispatch(actionsMovie.addMovieAC(movies, res.data.total_pages, pageNumber));
         } catch (e) {
             console.log(e);
         }
@@ -107,10 +105,10 @@ export const movieSearchThunk = (text, pageNumber) => {
                 return
             }
             let movies = res.data.results;
-            let arr = arrGrid(movies);
+            /*let arr = arrGrid(movies);*/
 
             dispatch(actionsMovie.changeSearchingTextMovieAC(text));
-            dispatch(actionsMovie.addMovieAC(movies, res.data.total_pages, arr, pageNumber));
+            dispatch(actionsMovie.addMovieAC(movies, res.data.total_pages, pageNumber));
         } catch (e) {
             console.log(e);
         }
@@ -123,16 +121,16 @@ export const FilterByNameThunk = (isFiltered) => {
     return (dispatch,getState) => {
         let state = getState().moviesPage;
         let movies = [...state.movies];
-        let moviesGrid = [];
+        /*let moviesGrid = [];*/
 
         if (isFiltered) {
             movies.sort((a, b) => a.original_title.localeCompare(b.original_title));
-            moviesGrid = arrGrid(movies);
+            /*moviesGrid = arrGrid(movies);*/
         } else {
             movies.sort((a, b) => b.original_title.localeCompare(a.original_title));
-            moviesGrid = arrGrid(movies);
+            /*moviesGrid = arrGrid(movies);*/
         }
-        dispatch(actionsMovie.sortMovieAC(movies,moviesGrid))
+        dispatch(actionsMovie.sortMovieAC(movies))
     }
 };
 
@@ -141,7 +139,7 @@ export const FilterByYearThunk = (isFiltered) => {
     return (dispatch,getState) => {
         let state = getState().moviesPage;
         let movies = [...state.movies];
-        let moviesGrid = [];
+       /* let moviesGrid = [];*/
 
         if (isFiltered) {
             movies.sort((a, b) => {
@@ -149,16 +147,16 @@ export const FilterByYearThunk = (isFiltered) => {
                 b = new Date(b.release_date);
                 return a>b ? -1 : a<b ? 1 : 0;
             });
-            moviesGrid = arrGrid(movies);
+           /* moviesGrid = arrGrid(movies);*/
         } else {
             movies.sort((a, b) => {
                 a = new Date(a.release_date);
                 b = new Date(b.release_date);
                 return a<b ? -1 : a>b ? 1 : 0;
             });
-            moviesGrid = arrGrid(movies);
+           /* moviesGrid = arrGrid(movies);*/
         }
-        dispatch(actionsMovie.sortMovieAC(movies,moviesGrid))
+        dispatch(actionsMovie.sortMovieAC(movies))
     }
 };
 

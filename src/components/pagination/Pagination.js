@@ -36,7 +36,9 @@ const Pagination = (props) => {
             {portionNumber > 1 && <div className={"pagination__left"}>
                 <div className={"pagination__leftArrow pagination__arrow"} onClick={() => setPortionNumber(portionNumber - 1)}>
                 </div>
-                <div className={"pagination__leftPoints points"}>
+                <div className={"pagination__leftPoints points"} onClick={() => {
+                    setPortionNumber(portionNumber - 5 < 1 ?1:portionNumber - 5)
+                }}>
                     <span></span>
                 </div>
             </div>}
@@ -48,7 +50,11 @@ const Pagination = (props) => {
             }
             </div>
             {portionCount > portionNumber && <div className={"pagination__right"}>
-                <div className={"pagination__rightPoints points"}>
+                <div className={"pagination__rightPoints points"}
+                     onClick={() => {
+                         setPortionNumber(portionNumber + 5 > portionCount?portionCount:portionNumber + 5)
+                     }}
+                >
                     <span></span>
                 </div>
                 <div className={"pagination__rightArrow pagination__arrow"} onClick={() => setPortionNumber(portionNumber + 1)}>
