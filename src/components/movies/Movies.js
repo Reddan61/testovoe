@@ -72,7 +72,7 @@ const Movies = (props) => {
                     <span className={"movies__span movies__span_active"} onClick={(e) => {
                         {/*changePage(e)*/
                         }
-                    }}>Films</span>
+                    }}>Movies</span>
                     {/*<span className={"movies__span"} onClick={(e) => changePage(e)}>TV series</span>*/}
                 </div>
                 <div className={"movies__filter"}>
