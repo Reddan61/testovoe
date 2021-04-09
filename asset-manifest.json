@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/testovoe/static/css/main.6f51fcf9.chunk.css",
+    "main.css": "/testovoe/static/css/main.ce076ed4.chunk.css",
     "main.js": "/testovoe/static/js/main.1065ac29.chunk.js",
     "main.js.map": "/testovoe/static/js/main.1065ac29.chunk.js.map",
     "runtime-main.js": "/testovoe/static/js/runtime-main.b45a5c76.js",
@@ -14,14 +14,14 @@
     "static/js/4.ec8d0e2d.chunk.js.map": "/testovoe/static/js/4.ec8d0e2d.chunk.js.map",
     "index.html": "/testovoe/index.html",
     "static/css/3.14477c95.chunk.css.map": "/testovoe/static/css/3.14477c95.chunk.css.map",
-    "static/css/main.6f51fcf9.chunk.css.map": "/testovoe/static/css/main.6f51fcf9.chunk.css.map",
+    "static/css/main.ce076ed4.chunk.css.map": "/testovoe/static/css/main.ce076ed4.chunk.css.map",
     "static/js/2.be0593e7.chunk.js.LICENSE.txt": "/testovoe/static/js/2.be0593e7.chunk.js.LICENSE.txt",
     "static/js/3.762bd8d1.chunk.js.LICENSE.txt": "/testovoe/static/js/3.762bd8d1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b45a5c76.js",
     "static/js/2.be0593e7.chunk.js",
-    "static/css/main.6f51fcf9.chunk.css",
+    "static/css/main.ce076ed4.chunk.css",
     "static/js/main.1065ac29.chunk.js"
   ]
 }
